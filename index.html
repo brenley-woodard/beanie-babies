@@ -30,9 +30,23 @@
     <body>
         <header>
             <img class="logo" src="assets/html_css_js.png" alt="logo" />
-            <h1>Web App</h1>
+            <h1>Beanie Babies</h1>
         </header>
 
-        <main></main>
+        <main>
+            <section id="search-section">
+                <h2>Search Beanie Babies</h2>
+                <form id="search-form">
+                    <label for="astro-select">
+                        Select an Astrosign:
+                        <select name="astro" id="astro-select">
+                            <option value="">Astrosigns</option>
+                        </select>
+                    </label>
+                </form>
+            </section>
+
+            <ul class="list" id="beanie-list"></ul>
+        </main>
     </body>
 </html>
