@@ -13,6 +13,11 @@ let astrosigns = [];
 /* Events */
 
 /* Display Functions */
+function pushBeanie() {
+    const test = { name: 'Ted', astroSign: 'scorpio' };
+    beanies.push(test);
+    displayBeanies();
+}
 
 function displayBeanies() {
     beanieList.innerHTML = '';
@@ -24,3 +29,4 @@ function displayBeanies() {
 
 // (don't forget to call any display functions you want to run on page load!)
 displayBeanies();
+pushBeanie();
