@@ -29,6 +29,11 @@ async function findBeanies(astroSign) {
     displayBeanies();
 }
 
+searchForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const formData = new FormData(searchForm);
+});
+
 /* Display Functions */
 
 function displayBeanies() {

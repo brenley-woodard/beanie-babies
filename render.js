@@ -19,9 +19,9 @@ export function renderBeanies(beanie) {
 }
 
 // is it astrosign.name or astroSign.name?
-export function renderAstroSign(astrosign) {
+export function renderAstroSign(astroSign) {
     const option = document.createElement('option');
-    option.value = astrosign.name;
-    option.textContent = astrosign.name;
+    option.value = astroSign.name;
+    option.textContent = astroSign.name;
     return option;
 }

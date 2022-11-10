@@ -18,6 +18,6 @@ export async function getBeanies(astroSign) {
 }
 
 export async function getAstroSign() {
-    let query = await client.from('beanie_baby_astroSigns');
+    let query = await client.from('beanie_baby_astro_signs').select('*');
     return query;
 }
