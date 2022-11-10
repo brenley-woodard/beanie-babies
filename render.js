@@ -7,9 +7,9 @@ export function renderBeanies(beanie) {
     li.classList.add('card');
 
     img.src = beanie.image;
-    img.alt = beanie.name;
+    img.alt = beanie.title;
 
-    h2.textContent = beanie.name;
+    h2.textContent = beanie.title;
 
     p.textContent = beanie.astroSign;
 
@@ -19,9 +19,9 @@ export function renderBeanies(beanie) {
 }
 
 // is it astrosign.name or astroSign.name?
-export function renderAstroSign(astroSign) {
+export function renderAstroSign(astrosign) {
     const option = document.createElement('option');
-    option.value = astroSign.name;
-    option.textContent = astroSign.name;
+    option.value = astrosign.name;
+    option.textContent = astrosign.name;
     return option;
 }

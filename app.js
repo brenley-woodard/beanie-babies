@@ -32,12 +32,14 @@ async function findBeanies(astroSign) {
 searchForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const formData = new FormData(searchForm);
+    const test = findBeanies(formData.get('astro'));
 });
 
 /* Display Functions */
 
 function displayBeanies() {
     beanieList.innerHTML = '';
+
     for (let beanie of beanies) {
         const beanieEl = renderBeanies(beanie);
         beanieList.append(beanieEl);
