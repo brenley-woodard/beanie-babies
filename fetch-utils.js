@@ -19,4 +19,5 @@ export async function getBeanies(astroSign) {
 
 export async function getAstroSign() {
     let query = await client.from('beanie_baby_astroSigns');
+    return query;
 }

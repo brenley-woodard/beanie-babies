@@ -1,6 +1,6 @@
 /* Imports */
-import { getBeanies } from './fetch-utils.js';
-import { renderBeanies } from './render.js';
+import { getBeanies, getAstroSign } from './fetch-utils.js';
+import { renderBeanies, renderAstroSign } from './render.js';
 /* Get DOM Elements */
 const beanieList = document.querySelector('#beanie-list');
 const searchForm = document.querySelector('#search-form');
@@ -17,7 +17,7 @@ window.addEventListener('load', async () => {
     // call a fetch function that's getting all astroSigns
     const response = await getAstroSign();
     // call a display function that displays all astroSigns
-    astroSigns = response.data;
+    astrosigns = response.data;
     displayAstroSigns();
 });
 
@@ -39,5 +39,11 @@ function displayBeanies() {
     }
 }
 
+function displayAstroSigns() {
+    for (let astrosign of astrosigns) {
+        const optionEl = renderAstroSign(astrosign);
+        astroSignSelect.append(optionEl);
+    }
+}
 // (don't forget to call any display functions you want to run on page load!)
 displayBeanies();
