@@ -10,6 +10,7 @@ body {
     background: var(--background);
     display: grid;
     grid-template-rows: auto 1fr;
+    background: rgb(218, 159, 218);
 }
 
 header {
